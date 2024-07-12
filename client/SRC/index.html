@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Random Ideas</title>
+
+<body>
+  <header>
+    <h1>Random Ideas</h1>
+    <button id="modal-btn">
+      <i class="fa-solid fa-plus fa-2x"></i>
+    </button>
+  </header>
+  <div class="container">
+    <div id="idea-list" class="ideas">
+      <div class="card">
+        <button class="delete"><i class="fas fa-times"></i></button>
+        <h3>
+          idea number1
+        </h3>
+        <p class="tag tag-technology">TECHNOLOGY</p>
+        <p>
+          posted on <span class="date">January 1, 2022</span> by
+          <span class="author">Tony Stark</span>
+        </p>
+      </div>
+      <div class="card">
+        <button class="delete"><i class="fas fa-times"></i></button>
+        <h3>
+          idea number 2
+        </h3>
+        <p class="tag tag-invention">INVENTION</p>
+        <p>
+          posted on <span class="date">January 2, 2022</span> by
+          <span class="author">Steve Rpgers</span>
+        </p>
+      </div>
+      <div class="card">
+        <button class="delete"><i class="fas fa-times"></i></button>
+        <h3>
+          idea number 3
+        </h3>
+        <p class="tag tag-business">BUSINESS</p>
+        <p>
+          posted on <span class="date">January 3, 2022</span> by
+          <span class="author">BruceBanner</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <div id="form-modal" class="modal-box">
+      <form id="idea-form">
+        <div class="form-control">
+          <label for="idea-text">Enter a Username</label>
+          <input type="text" name="username" id="username" />
+        </div>
+        <div class="form-control">
+          <label for="idea-text">What's your Idea?</label>
+          <textarea name="text" id="idea-text"></textarea>
+        </div>
+        <div class="form-control">
+          <label for="tag">Tag</label>
+          <input type="text" name="tag" id="tag" />
+        </div>
+        <button class="btn" type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
